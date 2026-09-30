@@ -90,6 +90,8 @@ agent_created: true
 2. **方案详细设计层**：数据结构、模块划分、函数签名、算法步骤
 3. **可落地层**：依赖、边界条件、选型建议
 
+> **三级拆解的可执行 SOP**：见 [`references/技术原理分析SOP.md`](references/技术原理分析SOP.md)（三级拆解 playbook：每级篇幅 + 真实示例 + 反例清单 + 已知坑挖掘方法）。分析组 / 撰写组 B 在写"原理性章节"前必须先读这份 SOP。
+
 ### 准则 3 · 反杜撰与证据台账
 
 - 每条事实断言带 `[src: 来源]` 标注
@@ -101,6 +103,8 @@ agent_created: true
 - 报告至少 3 层：篇 → 章 → 节 →（深读块）
 - 每个章可下钻到「深读」细节
 - 含可点击目录、跳转锚点
+
+> **多层报告的可执行 SOP**：见 [`references/报告撰写SOP.md`](references/报告撰写SOP.md)（报告结构模板 + brief 模板 + 5 种 mermaid 图 SOP + 6 个反例）。撰写组 B 写报告前必须先读这份 SOP，主控派撰写组 brief 时也必须按 SOP §三 的模板填。
 
 ---
 
@@ -154,13 +158,18 @@ mkdir -p outputs/01-调研 outputs/02-分析 outputs/03-撰写 outputs/04-设计
 
 详细角色定义、岗位 brief 模板、协作协议见团队蓝图。
 
-### 可复用方法论（v1 新增）
+### 可复用方法论
 
-| 文件 | 何时用 |
-|---|---|
-| `references/代码仓调研方法论.md` | 调研组 B 需要 `git clone` + Read/Grep 开源项目时（轨道 B 可执行 SOP）|
+> 任何调研 / 撰写 / 质检 / 分析任务开始前，**必须先读对应的 SOP**。
 
-> 后续版本将持续沉淀：技术原理分析 SOP / 报告撰写模板 / 质检 checklist 等。
+| 文件 | 适用阶段 | 何时用 |
+|---|---|---|
+| `references/代码仓调研方法论.md` | 调研组 B | `git clone` + Read/Grep 开源项目时（轨道 B 可执行 SOP）|
+| `references/技术原理分析SOP.md` | 分析组 / 撰写组 B | 写"原理 → 设计 → 落地"三级章节时（准则 2 可执行 SOP）|
+| `references/报告撰写SOP.md` | 撰写组 B + 主控 | 整合上游产物产出报告时（准则 4 可执行 SOP + brief 模板 + mermaid SOP）|
+| `references/质检checklistSOP.md` | 质检组 B | C 闸门核查上游产物时（checklist + 终审报告模板）|
+
+**版本演进**：v1 = 代码仓调研方法论；v2 = + 技术原理分析 / 报告撰写 / 质检 checklist。后续 v3+ 将持续沉淀：实施路径规划 / 可视化资产生成 / 主控协调 protocol 等。
 
 ---
 
