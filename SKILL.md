@@ -81,6 +81,8 @@ agent_created: true
 - **轨道 B**：对开源项目，`git clone` 到本地，用 Read/Grep 读真实源码
 - **禁止**只靠 WebFetch 摘要下结论
 
+> **轨道 B 的可执行 SOP**：见 [`references/代码仓调研方法论.md`](references/代码仓调研方法论.md)（grep playbook：4 步法 + 行号引用规范 + C 闸门验证 SOP）。每个调研组 B 在 git clone 任何项目前必须先读这份 SOP。
+
 ### 准则 2 · 原理 → 方案详细设计 → 可落地
 
 每个机制必须产出三级：
@@ -151,6 +153,14 @@ mkdir -p outputs/01-调研 outputs/02-分析 outputs/03-撰写 outputs/04-设计
 ```
 
 详细角色定义、岗位 brief 模板、协作协议见团队蓝图。
+
+### 可复用方法论（v1 新增）
+
+| 文件 | 何时用 |
+|---|---|
+| `references/代码仓调研方法论.md` | 调研组 B 需要 `git clone` + Read/Grep 开源项目时（轨道 B 可执行 SOP）|
+
+> 后续版本将持续沉淀：技术原理分析 SOP / 报告撰写模板 / 质检 checklist 等。
 
 ---
 
