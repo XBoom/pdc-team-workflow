@@ -82,6 +82,8 @@ agent_created: true
 - **禁止**只靠 WebFetch 摘要下结论
 
 > **轨道 B 的可执行 SOP**：见 [`references/代码仓调研方法论.md`](references/代码仓调研方法论.md)（grep playbook：4 步法 + 行号引用规范 + C 闸门验证 SOP）。每个调研组 B 在 git clone 任何项目前必须先读这份 SOP。
+>
+> **轨道 A 选仓的入口索引**：见 [`references/SKills-Resources.md`](references/SKills-Resources.md)（10 官方 + 7 awesome + 9 实战精选）。调研前先花 5 分钟扫这份索引，按「问题类型 → 仓库 ID」定位候选，不要凭直觉 clone。
 
 ### 准则 2 · 原理 → 方案详细设计 → 可落地
 
@@ -168,8 +170,9 @@ mkdir -p outputs/01-调研 outputs/02-分析 outputs/03-撰写 outputs/04-设计
 | `references/技术原理分析SOP.md` | 分析组 / 撰写组 B | 写"原理 → 设计 → 落地"三级章节时（准则 2 可执行 SOP）|
 | `references/报告撰写SOP.md` | 撰写组 B + 主控 | 整合上游产物产出报告时（准则 4 可执行 SOP + brief 模板 + mermaid SOP）|
 | `references/质检checklistSOP.md` | 质检组 B | C 闸门核查上游产物时（checklist + 终审报告模板）|
+| `references/SKills-Resources.md` | 主控 / 调研组 B / 撰写组 B / 质检组 C | 复杂问题外部 Skill 资源池索引（10 官方 + 7 awesome + 9 实战精选）；调研前查 §五「推荐组合」再起手，质检组 C 用 §七 checklist 校验 SKILL.md 合规性 |
 
-**版本演进**：v1 = 代码仓调研方法论；v2 = + 技术原理分析 / 报告撰写 / 质检 checklist。后续 v3+ 将持续沉淀：实施路径规划 / 可视化资产生成 / 主控协调 protocol 等。
+**版本演进**：v1 = 代码仓调研方法论；v2 = + 技术原理分析 / 报告撰写 / 质检 checklist。v2.1 = + **SKills-Resources 外部 Skill 资源池**（双轨制资料获取的「入口索引」）。后续 v3+ 将持续沉淀：实施路径规划 / 可视化资产生成 / 主控协调 protocol 等。
 
 ---
 
